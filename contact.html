@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Get in Touch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,10 +21,27 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Coming Soon...</h1>
-        <p>This page is under construction. Stay tuned!</p>
-        <a href="index.html" class="cta-button">Go Back Home</a>
+    <section class="contact">
+        <h1>Let's Connect</h1>
+        <p>Want to collaborate, ask something, or just say hi? Drop me a message.</p>
+
+        <form action="https://formsubmit.co/franciscofierroc@gmail.com" method="POST">
+            <!-- replace with your real email above -->
+
+            <input type="hidden" name="_next" value="https://ffierro.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Your message" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
     </section>
 
     <footer>
